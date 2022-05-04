@@ -51,9 +51,9 @@ TABLE OF CONTENT
   --ui-color-n-050: #f5f5f5;
   --ui-color-n-100: #ebebeb;
   --ui-color-n-300: #aeaeae;
-  --ui-color-n-500: #353535;
+  --ui-color-n-500: #525252;
   --ui-color-n-700: #282828;
-  --ui-color-n-900: #1a1a1a;
+  --ui-color-n-900: #444444;
 
   /* BACKGROUND COLOR */
   
@@ -82,12 +82,12 @@ TABLE OF CONTENT
 
   /* FONT SIZE */
 
-  --ui-typography-h1: 1.9375rem;
-  --ui-typography-h2: 1.5625rem;
+  --ui-typography-h1: 1.9rem;
+  --ui-typography-h2: 1.5rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
   --ui-typography-p : 1rem;
-  --ui-typography-s : .8125rem;
+  --ui-typography-s : .8rem;
 
   /* LEADING */
 
@@ -311,9 +311,9 @@ input[name="toggle"] { display: none; }
   padding: .5rem .625rem;
 }
 
-#ui-component-toggle__monthly:checked ~
+#ui-component-toggle__monthly:checked ~,
 div label[for=ui-component-toggle__monthly],
-#ui-component-toggle__yearly:checked ~
+#ui-component-toggle__yearly:checked ~,
 div label[for=ui-component-toggle__yearly] {
   background-color: var(--ui-color-background-primary);
   color: var(--ui-color-typography-body);
@@ -370,15 +370,18 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-header {
-  padding-bottom: 1.25rem;
-  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
 }
 
 .ui-section-header__layout { justify-content: space-between; }
 
 /* LOGO */
 
-.ui-section-header--logo { z-index: 1; }
+.ui-section-header--logo {
+  display: grid;
+  z-index: 1;
+}
 
 /* HAMBURGER */
 
@@ -410,12 +413,12 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-header--menu-icon::after { top: .6875rem; }
 
-#ui-section-header--menu-id:checked ~
+#ui-section-header--menu-id:checked ~,
 .ui-section-header--menu-icon::before {
   transform: translateY(3px) rotate(135deg);
 }
 
-#ui-section-header--menu-id:checked ~
+#ui-section-header--menu-id:checked ~,
 .ui-section-header--menu-icon::after {
   transform: translateY(-3px) rotate(45deg);
 }
@@ -437,7 +440,7 @@ div label[for=ui-component-toggle__yearly] {
   visibility: hidden;
 }
 
-#ui-section-header--menu-id:checked ~
+#ui-section-header--menu-id:checked ~,
 .ui-section-header--nav {
   opacity: 1;
   top: 0;
@@ -457,8 +460,8 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-hero {
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -491,8 +494,8 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-feature {
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .ui-section-feature__layout { row-gap: var(--ui-gap-card); }
@@ -571,17 +574,17 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-component-card--pricing-amount-1::before { content: "$5"; }
 
-#ui-component-toggle__yearly:checked ~ div
+#ui-component-toggle__yearly:checked ~ div,
 .ui-component-card--pricing-amount-1::before { content: "$3"; }
 
 .ui-component-card--pricing-amount-2::before { content: "$15"; }
 
-#ui-component-toggle__yearly:checked ~ div
+#ui-component-toggle__yearly:checked ~ div,
 .ui-component-card--pricing-amount-2::before { content: "$13"; }
 
 .ui-component-card--pricing-amount-3::before { content: "$25"; }
 
-#ui-component-toggle__yearly:checked ~ div
+#ui-component-toggle__yearly:checked ~ div,
 .ui-component-card--pricing-amount-3::before { content: "$23"; }
 
 /* LIST */
@@ -679,11 +682,11 @@ div label[for=ui-component-toggle__yearly] {
 
     /* FONT SIZE */
 
-    --ui-typography-h1: 2.1875rem;
+    --ui-typography-h1: 2.2rem;
     --ui-typography-h2: 1.75rem;
-    --ui-typography-h4: 1.125rem;
-    --ui-typography-p : 1.125rem;
-    --ui-typography-s : .875rem;
+    --ui-typography-h4: 1.13rem;
+    --ui-typography-p : 1.13rem;
+    --ui-typography-s : .8rem;
 
     /* MARGIN */
 
@@ -768,7 +771,7 @@ div label[for=ui-component-toggle__yearly] {
 
   .ui-section-header {
     padding-bottom: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   /* ICON */
@@ -949,9 +952,9 @@ div label[for=ui-component-toggle__yearly] {
 
     /* FONT SIZE */
 
-    --ui-typography-h1: 2.75rem;
-    --ui-typography-h2: 2.1875rem;
-    --ui-typography-h4: 1.4375rem;
+    --ui-typography-h1: 3rem;
+    --ui-typography-h2: 2rem;
+    --ui-typography-h4: 1.2rem;
 
     /* MARGIN */
 
@@ -1014,7 +1017,10 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-header { padding-top: 3rem; }
+  .ui-section-header {
+    background-color: #e1e1e1;
+    padding-top: 0;
+  }
 
   /*------------------------------------------------------------
   |
@@ -1023,8 +1029,8 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-hero {
-    padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
   }
 
   /*------------------------------------------------------------
@@ -1046,8 +1052,8 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-feature {
-    padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
   }
 
   /*------------------------------------------------------------
