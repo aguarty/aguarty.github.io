@@ -370,6 +370,7 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-header {
+  background-color: #e1e1e1;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
 }
@@ -770,6 +771,7 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-header {
+    background-color: #e1e1e1;
     padding-bottom: 0;
     padding-top: 1rem;
   }
