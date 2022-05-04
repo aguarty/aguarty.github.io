@@ -384,6 +384,11 @@ div label[for=ui-component-toggle__yearly] {
   z-index: 1;
 }
 
+.ui-section-header--comment {
+  margin-top: -1.3rem;
+  font-size: 1rem;
+}
+
 /* HAMBURGER */
 
 #ui-section-header--menu-id { display: none; }
