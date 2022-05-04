@@ -1,7 +1,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 	"net/http"
 	"time"
@@ -16,22 +15,10 @@ func main() {
 		MaxHeaderBytes: 1 << 20,
 	}
 
-	http.HandleFunc("/", fooHandler)
+	fs := http.FileServer(http.Dir("./"))
+	http.Handle("/", fs)
+
 	log.Println("Server started...")
 	log.Fatal(s.ListenAndServe())
 
-}
-
-func fooHandler(w http.ResponseWriter, r *http.Request) {
-	body := openFile("../aguarty.github.io/index.html")
-	w.Write(body)
-
-}
-
-func openFile(path string) []byte {
-	data, err := ioutil.ReadFile(path)
-	if err != nil {
-		panic(err)
-	}
-	return data
 }
