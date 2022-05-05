@@ -1,0 +1,47 @@
+User-agent: Googlebot
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Disallow: /*.md
+Allow: /*.css
+Allow: /*.js
+Allow: /*/images/*.jpg
+Allow: /*/images/*.jpeg
+Allow: /*/images/*.png
+Allow: /*/images/*.gif
+Host: babywozki.ru
+ 
+User-agent: Yandex
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Disallow: /*.md
+Allow: /*.css
+Allow: /*.js
+Allow: /*/images/*.jpg
+Allow: /*/images/*.jpeg
+Allow: /*/images/*.png
+Allow: /*/images/*.gif
+Host: babywozki.ru
+
+User-agent: *
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Disallow: /*.md
+Allow: /*.css
+Allow: /*.js
+Allow: /*/images/*.jpg
+Allow: /*/images/*.jpeg
+Allow: /*/images/*.png
+Allow: /*/images/*.gif
+Host: babywozki.ru
+
+Sitemap: https://babywozki.ru/sitemap.xml
+
